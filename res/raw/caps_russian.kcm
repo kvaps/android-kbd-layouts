@@ -23,6 +23,10 @@ type OVERLAY
 # Caps Lock switches the keyboard layout
 map key 58 LANGUAGE_SWITCH
 
+# Command keys act as right Ctrl (Meta combos are swallowed by the system)
+map key 125 CTRL_RIGHT
+map key 126 CTRL_RIGHT
+
 map key 86 BACKSLASH
 
 ### ROW 1
@@ -379,7 +383,7 @@ key X {
     ralt:                               'x'
     shift+ralt, capslock+ralt:          'X'
     shift+capslock+ralt:                'x'
-    meta:                               replace CUT
+    rctrl:                              replace CUT
 }
 
 key C {
@@ -390,7 +394,7 @@ key C {
     ralt:                               'c'
     shift+ralt, capslock+ralt:          'C'
     shift+capslock+ralt:                'c'
-    meta:                               replace COPY
+    rctrl:                              replace COPY
 }
 
 key V {
@@ -401,7 +405,7 @@ key V {
     ralt:                               'v'
     shift+ralt, capslock+ralt:          'V'
     shift+capslock+ralt:                'v'
-    meta:                               replace PASTE
+    rctrl:                              replace PASTE
 }
 
 key B {
