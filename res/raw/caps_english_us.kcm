@@ -23,9 +23,9 @@ type OVERLAY
 # Caps Lock switches the keyboard layout
 map key 58 LANGUAGE_SWITCH
 
-# Command keys act as right Alt, so Command+Tab is the Alt+Tab app switcher
-map key 125 ALT_RIGHT
-map key 126 ALT_RIGHT
+# Command keys act as right Ctrl; the physical Ctrl stays left Ctrl for terminal control codes
+map key 125 CTRL_RIGHT
+map key 126 CTRL_RIGHT
 
 ### ROW 1
 
@@ -288,7 +288,7 @@ key X {
     base:                               'x'
     shift, capslock:                    'X'
     shift+capslock:                     'x'
-    ralt:                               replace CUT
+    rctrl:                              replace CUT
 }
 
 key C {
@@ -296,7 +296,7 @@ key C {
     base:                               'c'
     shift, capslock:                    'C'
     shift+capslock:                     'c'
-    ralt:                               replace COPY
+    rctrl:                              replace COPY
 }
 
 key V {
@@ -304,7 +304,7 @@ key V {
     base:                               'v'
     shift, capslock:                    'V'
     shift+capslock:                     'v'
-    ralt:                               replace PASTE
+    rctrl:                              replace PASTE
 }
 
 key B {
@@ -346,11 +346,18 @@ key SLASH {
     shift:                              '?'
 }
 
+# Command+Tab opens the recent apps overview
+key TAB {
+    label:                              '\t'
+    base:                               '\t'
+    rctrl:                              replace APP_SWITCH
+}
+
 # Command+Space opens the app launcher
 key SPACE {
     label:                              ' '
     base:                               ' '
-    ralt:                               replace ALL_APPS
-    lalt, meta:                         fallback SEARCH
-    ctrl:                               fallback LANGUAGE_SWITCH
+    rctrl:                              replace ALL_APPS
+    lctrl:                              fallback LANGUAGE_SWITCH
+    alt, meta:                          fallback SEARCH
 }
