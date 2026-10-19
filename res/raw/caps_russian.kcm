@@ -476,3 +476,10 @@ key NUMPAD_COMMA {
     label:                              ' '
     base:                               '\u202f'
 }
+
+# Command+Tab opens the recent apps overview
+key TAB {
+    label:                              '\t'
+    base:                               '\t'
+    rctrl:                              replace APP_SWITCH
+}
