@@ -40,6 +40,10 @@ Command is deliberately not used as Android's Meta (Action) key: the system inte
 
 ## Install
 
+### Download
+
+Get the prebuilt APK from [Releases](https://github.com/kvaps/android-kbd-layouts/releases), or build it yourself.
+
 ### Build
 
 On Debian or Ubuntu:
@@ -58,6 +62,8 @@ The first build generates a signing key, `debug.keystore`. Keep it: updates must
 ```sh
 adb install -r build/kbd-layouts.apk
 ```
+
+Use the downloaded file name instead if you took the APK from Releases.
 
 ### Select the layouts
 
