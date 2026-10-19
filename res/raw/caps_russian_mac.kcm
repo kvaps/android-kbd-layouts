@@ -375,3 +375,12 @@ key NUMPAD_COMMA {
     label:                              ' '
     base:                               '\u202f'
 }
+
+# Command+Space opens the app launcher
+key SPACE {
+    label:                              ' '
+    base:                               ' '
+    ralt:                               replace ALL_APPS
+    lalt, meta:                         fallback SEARCH
+    ctrl:                               fallback LANGUAGE_SWITCH
+}
