@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Caps Lock Layouts</string>
+    <string name="english_us">English (US), Caps Lock switch</string>
+    <string name="russian">Russian, Caps Lock switch</string>
+    <string name="russian_mac">Russian (Mac), Caps Lock switch</string>
+</resources>
