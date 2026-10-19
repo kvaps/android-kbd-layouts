@@ -23,9 +23,9 @@ type OVERLAY
 # Caps Lock switches the keyboard layout
 map key 58 LANGUAGE_SWITCH
 
-# Command keys act as right Ctrl (Meta combos are swallowed by the system)
-map key 125 CTRL_RIGHT
-map key 126 CTRL_RIGHT
+# Command keys act as right Alt, so Command+Tab is the Alt+Tab app switcher
+map key 125 ALT_RIGHT
+map key 126 ALT_RIGHT
 
 ### ROW 1
 
@@ -288,7 +288,7 @@ key X {
     base:                               'x'
     shift, capslock:                    'X'
     shift+capslock:                     'x'
-    rctrl:                              replace CUT
+    ralt:                               replace CUT
 }
 
 key C {
@@ -296,7 +296,7 @@ key C {
     base:                               'c'
     shift, capslock:                    'C'
     shift+capslock:                     'c'
-    rctrl:                              replace COPY
+    ralt:                               replace COPY
 }
 
 key V {
@@ -304,7 +304,7 @@ key V {
     base:                               'v'
     shift, capslock:                    'V'
     shift+capslock:                     'v'
-    rctrl:                              replace PASTE
+    ralt:                               replace PASTE
 }
 
 key B {
@@ -344,11 +344,4 @@ key SLASH {
     label:                              '/'
     base:                               '/'
     shift:                              '?'
-}
-
-# Command+Tab opens the recent apps overview
-key TAB {
-    label:                              '\t'
-    base:                               '\t'
-    rctrl:                              replace APP_SWITCH
 }
