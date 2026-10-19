@@ -379,6 +379,7 @@ key X {
     ralt:                               'x'
     shift+ralt, capslock+ralt:          'X'
     shift+capslock+ralt:                'x'
+    meta:                               replace CUT
 }
 
 key C {
@@ -389,6 +390,7 @@ key C {
     ralt:                               'c'
     shift+ralt, capslock+ralt:          'C'
     shift+capslock+ralt:                'c'
+    meta:                               replace COPY
 }
 
 key V {
@@ -399,6 +401,7 @@ key V {
     ralt:                               'v'
     shift+ralt, capslock+ralt:          'V'
     shift+capslock+ralt:                'v'
+    meta:                               replace PASTE
 }
 
 key B {

@@ -284,6 +284,7 @@ key X {
     base:                               'x'
     shift, capslock:                    'X'
     shift+capslock:                     'x'
+    meta:                               replace CUT
 }
 
 key C {
@@ -291,6 +292,7 @@ key C {
     base:                               'c'
     shift, capslock:                    'C'
     shift+capslock:                     'c'
+    meta:                               replace COPY
 }
 
 key V {
@@ -298,6 +300,7 @@ key V {
     base:                               'v'
     shift, capslock:                    'V'
     shift+capslock:                     'v'
+    meta:                               replace PASTE
 }
 
 key B {
